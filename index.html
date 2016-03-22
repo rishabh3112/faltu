@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+
+
+    <title>CodePen - RISHABH - THE WEB DEV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+        <style>
+      @import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+.navbar{
+  font-family: 'Lobster Two', cursive;
+}
+.home{
+  width: 100%;
+  height: 720px;
+  background: url("https://i.imgsafe.org/cdc185f.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: ease-in 2s;
+}
+.main{
+  display: block;
+  position: absolute center center;
+  padding-top: 10%;
+  transition: ease-in 2s;
+  
+}
+.title{
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  padding-bottom: 20px;
+  
+  
+}
+.subtitle{
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lobster Two';
+  padding-bottom: 20px;
+  background: rgba(140,160,255,255);
+  border-bottom: 10px solid;
+   border-top: 10px solid;
+  margin-top: 25px;
+  text-decoration: none;
+  width: 70%;
+  border-radius: 40px 0px 40px 0px;
+  
+}
+.about{
+  display: block;
+   width: 100%;
+  height: 720px !important;
+  padding-top: 50px;
+  background: linear-gradient(#aaf , #edf , #edf) no-repeat center center !important;
+  box-shadow: -40px 40px 20px #666; 
+  
+}
+.rop{
+  position: relative;
+  bottom: -50px ;
+  left: 45%;
+}
+.contact{
+  display: block;
+  width: 100%;
+  height: 300px !important;
+  background: url("https://i.imgsafe.org/79c0d0e.png") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  
+}
+    </style>
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Rishabh -the Web Dev</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<a name="home"></a><div id="home" class="home">
+  <div class="main">
+    <p class="title">RISHABH CHAWLA</p>
+    <center><p class="subtitle">Web Developer</P></center>
+    <a href="#about"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/54414-200.png" class="img-responsive rop" width="80px"></a>
+  </div>
+  
+</div>
+
+<div id="about" class="home about" style="box-shadow: 0px 10px 20px #666 inset !important;">
+    <div class="title">About</div>
+    <div class="jumbotron well">
+  <h1>Rishabh</h1>
+  <hr style="border-bottom: #aaf 20px;"/>
+      <h2>front-end web developer</h2>
+      <blockquote>i am great</blockquote>
+      
+  
+</div></div>
+  <div class="contact" id="contact">
+    <div class="title" style="text-shadow: 3px 2px 5px #444">Contact</div>
+    <div class="well">
+      <center><h1 class="text-primary">rishabh31121999@gmail.com</h1></center>
+    </div>
+   <style>
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+</style>
+
+<footer class="container-fluid bg-4 text-center">
+  -rishabh
+</footer>
+      </div>
+    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+
+        <script>
+      $('document').ready(function(){
+ 
+  
+  $('.title').addClass('animated bounceInDown');
+   $('.subtitle').addClass('animated zoomInRight');
+  
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1600, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+});
+  
+  
+});
+      //@ sourceURL=pen.js
+    </script>
+
+    
+    
+    
+  </body>
+</html>
