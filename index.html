@@ -24,8 +24,6 @@
 .home{
   width: 100%;
   height: 720px;
-  background: url("back.gif") no-repeat center center;
-  backdrop-filter: blur(5px);
   background-attachment: fixed;
   background-size: cover;
   transition: ease-in 2s;
@@ -33,6 +31,7 @@
 }
 .main{
   display: block;
+  z-index: 9999;
   position: absolute center center;
   padding-top: 10%;
   transition: ease-in 2s;
@@ -89,6 +88,15 @@
   
   
 }
+ #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url("b.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    
 @media screen and (max-width: 600px) {
   .title{
     font-size: 45px;
@@ -137,6 +145,12 @@ height: 400px !important;
   </div>
 </div>
 <a name="home"></a><div id="home" class="home">
+  <div id="particles-js"></div>
+<div class="container">
+<h1>Rishabh</h1>
+</div>
+
+
   <div class="main">
     <p class="title">RISHABH CHAWLA</p>
     <center><p class="subtitle">Web Developer</P></center>
@@ -176,6 +190,8 @@ height: 400px !important;
   -rishabh
 </footer>
       </div>
+      <script src="particles.js"></script>
+<script src="app.js"></script>
     
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
